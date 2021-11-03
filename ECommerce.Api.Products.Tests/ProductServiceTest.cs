@@ -16,7 +16,7 @@ namespace ECommerce.Api.Products.Tests
         [Fact]        
         public async Task GetProductsReturnsAllProducts()
         {
-            var options = new DbContextOptionsBuilder<ProductsDbContext>()
+           var options = new DbContextOptionsBuilder<ProductsDbContext>()
                 .UseInMemoryDatabase(nameof(GetProductsReturnsAllProducts))
                 .Options;
             var dbContext = new ProductsDbContext(options);
